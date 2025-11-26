@@ -1,0 +1,59 @@
+ 
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #9aa6ff; 
+            color: #2e2e2e;
+            line-height: 1.6;
+        }
+
+        header {
+      background-color: #3e2ad4;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+
+        .container {
+            background-color: white;
+            width: 60%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #230082;
+            padding-bottom: 5px;
+        }
+
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(208, 68, 91);
+        }
+
+        a:hover {
+            color: rgb(164, 52, 224);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .to-main:visited {
+            color: white;
+            background-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Особиста сторінка Анни, студентки Полтавської політехніки, про її хобі та програмування.">
+  <meta name="keywords" content="Анна, студентка, хобі, програмування, фотографія, малювання">
+  <title>LAB 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #c0bdff; 
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6a5acd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 800px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #4b0082;
+      border-bottom: 2px solid #d1c4e9;
+      padding-bottom: 5px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    code {
+      display: block;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    a {
+      color: #4b0082;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Моя сторінка</header>
+
+  <main>
+    <section>
+         <h1>Про себе</h1>
+      <p>
+        Привіт! Мене звати <b>Анна</b>, мені 20 років, і я студентка
+        <u>Національного університету "Полтавська політехніка імені Юрія Кондратюка"</u>.
+        Я навчаюся на <b><i>програмістку</i></b>, і хоча це доволі складна сфера, мені подобається розбиратися у складних алгоритмах і створювати щось нове.
+        З дитинства я цікавилася <i>технологіями</i> та <b>мистецтвом</b>, а зараз намагаюся поєднувати ці дві сфери у своїй діяльності.
+      </p>
+
+      <hr>
+
+      <p>
+        Я дуже люблю <b>музику</b> 🎵, малювати і працювати з 3D-графікою.
+        Нещодавно я почала створювати <u>3D-моделі</u> — це дуже захоплює мене!
+        Мрію одного дня створювати 3D-ігри або працювати у сфері анімації.
+        Також читаю книги про програмування, дизайн і штучний інтелект.
+        <strike>Не завжди все виходить з першого разу</strike>, але наполегливість допомагає досягати цілей.
+      </p>
+    </section>
+
+    <section>
+      <h2>Моє хобі</h2>
+      <p>
+        Моє головне захоплення — <strong>музика</strong>. Я обожнюю грати на гітарі, співати та створювати власні мелодії.
+        Музика допомагає мені розслабитися після важкого дня і виразити емоції.
+        Також я люблю <i>малювати</i> — особливо цифрові картини 🌸.
+        Малювання для мене — це спосіб самовираження.
+      </p>
+
+      <p>
+        Крім того, я вивчаю <abbr title="Комп'ютерна графіка та анімація">CG</abbr> і створюю <sup>3D</sup>-моделі.
+        Наприклад, нещодавно зробила свою першу модель будинку в Blender і працюю над персонажами для гри.
+      </p>
+    </section>
+
+    <section>
+      <h2>Програмування</h2>
+      <code>
+        <pre>
+#include &lt;iostream&gt;
+#include &lt;Windows.h&gt;
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+    Node* prev;
+    Node(int value) : data(value), next(nullptr), prev(nullptr) {}
+};
+
+class Deque {
+private:
+    Node* right;
+    Node* left;
+    int size;
+public:
+    Deque() : right(nullptr), left(nullptr), size(0) {}
+    void pushRight(int value) {
+        Node* newNode = new Node(value);
+        if (right == nullptr) {
+            right = left = newNode;
+        } else {
+            newNode->next = right;
+            right->prev = newNode;
+            right = newNode;
+        }
+        size++;
+    }
+};</pre>
+      </code>
+    </section>
+
+<hr>
+    <h3><a href="BilotserkivskaLab5-3.html">Мої гіперпосилання</a></h3>
+    <hr>
+
+    <footer>
+      <p><em>Студентка групи 302 ТН — Білоцерківська А.Г.</em></p>
+      <p>Телефон: <a href="tel:+380954568596">+380954568596</a></p>
+      <p>Email: <a href="mailto:bilotserkivska@gmail.com">bilotserkivska@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>

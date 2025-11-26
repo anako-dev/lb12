@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-image: url("images/Space.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2e2e2e;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: #241f47;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.to-main {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Основний контейнер */
+.container {
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #230082;
+    font-weight: bold;
+}
+
+/* Абзаци: курсив, червоний рядок, вирівнювання */
+p {
+    font-style: italic;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 10px 0;
+}
+
+/* Стилі посилань */
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(208, 68, 91);
+}
+
+a:hover {
+    color: rgb(164, 52, 224);
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+
+img {
+  float: right;
+        height: 300px;
+margin: 20px;
+}
